@@ -1,0 +1,100 @@
+@font-face{ 
+	font-family: 'existence';
+	src: url('http://sam.apostel.be/fonts/existence/Existence-Light.eot');
+	src: url('http://sam.apostel.be/fonts/existence/Existence-Light.eot?iefix') format('eot'),
+	     url('http://sam.apostel.be/fonts/existence/Existence-Light.woff') format('woff'),
+	     url('http://sam.apostel.be/fonts/existence/Existence-Light.ttf') format('truetype'),
+	     url('http://sam.apostel.be/fonts/existence/Existence-Light.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body{
+	margin:0;
+	padding:0;
+	font-family: existence;
+	background-color:#929AAA;
+}
+div.container{
+	background-color:#FFF;
+	box-sizing:border-box;
+	margin:auto;
+	margin-top:100px;
+	margin-bottom:100px;
+	position:relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+div.container.login{
+	width:375px;
+	height:600px;
+	padding:60px;
+}
+
+h1, h2{
+	padding:0;
+	margin:0;
+}
+h1.title{
+	margin-top:0px;
+}
+.title{
+	margin-bottom:40px;
+}
+h2{
+	color:#929AAA;
+}
+input[type="button"],input[type="text"], input[type="password"]{
+	color:#929AAA;
+	border:none;
+	background:none;
+	text-align:left;
+	padding:0;
+	margin-bottom:10px;
+	font-family:existence;
+	font-size:90%;
+	width:100%;
+	outline-style: none;
+	position:relative;
+}
+input[type="text"]{
+	margin-top:70px;
+}
+input[type="button"]{
+	margin-top:40px;
+	color: #1784E1;
+	font-size:135%;
+	cursor:pointer;
+}
+hr{
+	position:relative;
+	left:0;
+	width:0%;
+	height:2px;
+	background-color:#1784E1;
+	border:none;
+	margin-top:0;
+	margin-bottom:20px;
+	transition:0.5s;
+}
+input[type="text"] + hr, input[type="password"] + hr{
+	margin-left:0;
+}
+
+input:focus + hr{
+	width:100%;
+}
+
+input[type="button"]:hover{
+	transparancy: 50%;
+}
+p#register{
+	position:absolute;
+	bottom:0;
+	color: #929AAA;
+}
+a{
+	font-size:120%;
+	color: #586472;
+}
+a:hover{
+	text-decoration: underline;
+}
