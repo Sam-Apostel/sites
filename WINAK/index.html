@@ -1,0 +1,45 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                        appId            : '134156587212803',
+                        autoLogAppEvents : true,
+                        xfbml            : true,
+                        version          : 'v2.10'
+                        });
+                        FB.AppEvents.logPageView();
+            };
+        
+        (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "http://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+         
+         
+         function myFacebookLogin() {
+             FB.login(function(){}, {scope: 'publish_actions'});
+         }
+         function myFacebookName() {
+          	FB.api('/me', {fields: 'last_name'}, function(response) {
+         	  console.log(response);
+         	});
+          }
+         function myFacebookPicture(img) {
+         	FB.api('/me', {fields: 'picture'},{type:'large'}, function(response) {
+         		img.src = response.picture.data["url"];
+        	});
+         }
+         
+        </script>
+        <button onclick="myFacebookLogin()">Login with Facebook</button>
+        <button onclick="myFacebookName()">name</button>
+        <img src="" onclick="myFacebookPicture(this)" width="500" height="500">
+    </body>
+</html>
