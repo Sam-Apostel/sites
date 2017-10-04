@@ -1,0 +1,6 @@
+contentItem#leaderboard options{
+	background-color:#ffc339;
+}
+contentItem#leaderboard optionF.selected{
+	color: #ffc339;
+}

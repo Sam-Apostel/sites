@@ -1,0 +1,109 @@
+contentItem#chats options{
+	background-color:#CF5D46;
+}
+contentItem#chats optionF.selected{
+	color: #CF5D46;
+}
+contentItem#chats chathead{
+	display:block;
+	width:414px;
+	height:70px;
+	text-align:right;
+	border-bottom: 1px solid #81AA72;
+	position:relative;
+}
+contentItem#chats chathead img{
+	width: 50px;
+	height:50px;
+	border: 3px solid #CF5D46;
+	border-radius:30px;
+	position:absolute;
+	top:5px;
+	left:5px;
+}
+contentItem#chats img.1{
+		border: 6px solid black;
+}
+contentItem#chats chathead name{
+	color:#CF5D46;
+	font-weight: bold;
+	font-family:arial;
+	position:absolute;
+	top:7px;
+	left:70px;
+}
+contentItem#chats chathead button{
+	margin: 10px;
+	width: 50px;
+	height:50px;
+	border: none;
+	background-color: #CF5D46;
+	background-image: url('../img/arrowright.svg');
+	background-size: 20px 20px;
+	background-position: 15px 15px;
+	background-repeat:no-repeat;
+	border-radius:10px;
+}
+
+/******** new chat ***********/
+contentItem#chats .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+contentItem#chats .modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+contentItem#chats .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+contentItem#chats .close:hover,
+contentItem#chats .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+contentItem#chats .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+contentItem#chats .modal-body {
+	padding: 2px 16px
+}
+
+contentItem#chats .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    text-align:center;
+}
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+contentItem#chats h2{
+	margin-bottom:15px;
+}

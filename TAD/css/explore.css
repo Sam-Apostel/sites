@@ -1,0 +1,6 @@
+contentItem#explore options{
+	background-color:#486dcb;
+}
+contentItem#explore optionF.selected{
+	color: #486dcb;
+}

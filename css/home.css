@@ -1,0 +1,15 @@
+section.sectionPane#home{
+	border:#4069b7 solid black;
+	width:calc((458px - 5px + 75px)*2);
+	margin-left:calc(50vw - (458px - 5px + 75px) );
+	box-sizing:border-box;
+	padding:10px;
+	padding-top:50px;
+	min-height:calc(100vh - 200px);
+	background:linear-gradient( #4069b7 , #6da8ff);
+	color:white;
+	margin-bottom:20px;
+}
+section.sectionPane#home h2{
+	text-align:center;
+}
